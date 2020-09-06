@@ -55,4 +55,4 @@ html_static_path = ['_static']
 
 # Required to avoid Sphinx error in ReadTheDocs building process. ReadTheDocs is using
 # Sphinx v1. while this project uses Sphix v2.
-master_doc = 'index'
+# master_doc = 'index'
