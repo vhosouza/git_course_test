@@ -1,16 +1,16 @@
-.. git_course documentation master file, created by
-   sphinx-quickstart on Sun Sep  6 20:41:43 2020.
+.. Git Quick Course documentation master file, created by
+   sphinx-quickstart on Mon Sep  7 09:27:05 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to git_course's documentation!
-======================================
+Welcome to Git Quick Course's documentation!
+============================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   start-here
+
 
 Indices and tables
 ==================
