@@ -1,0 +1,348 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Workflows &mdash; Git Course v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Issue tracking" href="issue-tracking.html" />
+    <link rel="prev" title="Basic concepts" href="basic-concepts.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Git Course
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="start-here.html">Introduction to Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic-concepts.html">Basic concepts</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Workflows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#working-pipeline">Working pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#detailed-workflow">Detailed workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="issue-tracking.html">Issue tracking</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Git Course</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Workflows</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/workflows.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="workflows">
+<h1>Workflows<a class="headerlink" href="#workflows" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://buddy.works/blog/5-types-of-git-workflows">Examples of Git workflows</a></p>
+<ol class="arabic simple">
+<li><p>Simple</p></li>
+<li><p>Feature branch</p></li>
+<li><p>Feature branch + merge requests</p></li>
+<li><p>Gitflow (Master - Develop - Feature - Feature)</p></li>
+<li><p><strong>Forking workflow</strong></p></li>
+</ol>
+<div class="section" id="working-pipeline">
+<h2>Working pipeline<a class="headerlink" href="#working-pipeline" title="Permalink to this headline">¶</a></h2>
+<p>Single-time steps:</p>
+<ol class="arabic simple">
+<li><p>Create a central group and store the main repository there</p></li>
+<li><p>Each developer forks the central repository</p></li>
+<li><p>Clone the forked repository to the local computer</p></li>
+<li><p>Create a branch to work on an issue</p></li>
+</ol>
+<p>Everyday steps:</p>
+<ol class="arabic simple">
+<li><p>Merge changes from upstream to your local branch</p></li>
+<li><p>Make changes to the code</p></li>
+<li><p>Add, commit and push to the remote fork</p></li>
+</ol>
+</div>
+<div class="section" id="detailed-workflow">
+<h2>Detailed workflow<a class="headerlink" href="#detailed-workflow" title="Permalink to this headline">¶</a></h2>
+<p>In order to contribute to a third-party repository, you have to fork it, i.e. create your own copy in your GitHub account. Open web browser, log into your Aalto Version (or GitHub) account, go to the repository you want to contribute. Click on <code class="docutils literal notranslate"><span class="pre">Fork</span></code>. A repository with the same name will be created in your own account page.</p>
+<p>Now you have to clone it to your computer to edit the code and send it back to the online repository. Create a folder with na easy path, like <code class="docutils literal notranslate"><span class="pre">D:\repository</span></code>. Open the terminal/shell and go to the desired folder:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you clone git will automatically create the folder with the repository name, so you do not need to manually create a specific folder to clone the code.</p>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> <span class="s2">&quot;D:\repository&quot;</span>
+</pre></div>
+</div>
+<p>Copy the SSH path available on the forked repository web page and past it on the terminal.</p>
+<p>From now on, let’s use as an example the username <code class="docutils literal notranslate"><span class="pre">johnnybgood</span></code>, the repository name is <code class="docutils literal notranslate"><span class="pre">tutorial-git</span></code>, and that the repository is on GitHub, but the same applies to Aalto Version.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:johnnybgood/tutorial-git.git
+git remote -v  <span class="c1"># List all remote repositories linked to your local copy - origin is set by default</span>
+<span class="hll">origin  git@github.com:johnnybgood/tutorial-git.git <span class="o">(</span>fetch<span class="o">)</span>
+</span><span class="hll">origin  git@github.com:johnnybgood/tutorial-git.git <span class="o">(</span>push<span class="o">)</span>
+</span></pre></div>
+</div>
+<p>Now you can work on your local copy of tutorial-git. You will also want to be able to constantly get and make changes in the main project repository. You do that by adding a remote repository with the following command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git remote add upstream git@github.com:biomaglab/tutorial-git.git
+</pre></div>
+</div>
+<p>In order to contribute to other repositories, you can keep adding these remote connections. Using direct remote to others repositories can be useful for small teams developing large projects. For instance if <code class="docutils literal notranslate"><span class="pre">johnnybgood</span></code> wants to contribute directly to <code class="docutils literal notranslate"><span class="pre">marybcool</span></code>, he can add the following remote link:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git remote add marybcool_repo git@github.com:marybcool/tutorial-git.git
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">upstream</span></code> is a conventional name used among git users, but is just a manually set name. For instance you can name it as <code class="docutils literal notranslate"><span class="pre">main_project</span></code>. That is why we could name the <code class="docutils literal notranslate"><span class="pre">marybcool</span></code> repo as <code class="docutils literal notranslate"><span class="pre">marybcool_repo</span></code>.</p>
+</div>
+<p>You should always work on a branch other than the master. Let the branch master be just a mirror of the main repository code with the tested and stable code version. Thus, start by creating a branch named after the issue you are going to work, for instance <code class="docutils literal notranslate"><span class="pre">new_colormap</span></code>.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git checkout -b new_colormap
+</pre></div>
+</div>
+<p>After you created the new branch, jump between branches using the <code class="docutils literal notranslate"><span class="pre">checkout</span></code> command followed by the branch name:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git checkout master
+git checkout new_colormap
+</pre></div>
+</div>
+<p>Now you can start the real work! After some programming you can <code class="docutils literal notranslate"><span class="pre">add</span></code> changes to a staging area. You don’t have to upload every change, you can add many different files to the staging area and then upload them in separate snapshots of changes. Snapshots are the <code class="docutils literal notranslate"><span class="pre">commits</span></code>, and is a good practive to never loose track of your code. So after editing a lot of different files and adding them to the staging area you can create separate commits for more focused changes in specific functions to the software or algorithm. After editing and before uploading changes, you have to identify the staged, unstaged and untracked files according to your local repo and the origin repo. Use the <code class="docutils literal notranslate"><span class="pre">status</span></code> command.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To ignore some undesired files such as <code class="docutils literal notranslate"><span class="pre">.~m</span></code> or <code class="docutils literal notranslate"><span class="pre">.pyc</span></code> or <code class="docutils literal notranslate"><span class="pre">.exe</span></code> you can create a <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file at the root of source code and add in each line the type of file to be ignored by git like.</p>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git status <span class="c1"># Using the -s argument simplify the status description</span>
+git add . <span class="c1"># Adds all changes to staging area</span>
+git commit <span class="c1"># This will open the text editor to write the commit description</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Commit messages have to be short and informative. Avoid using abstract messages such as: <em>Minor bugs fixed</em>. Later you will have a hard time to know when you made specific changes.</p>
+</div>
+<p>Another way of using the <code class="docutils literal notranslate"><span class="pre">add</span></code> and <code class="docutils literal notranslate"><span class="pre">commit</span></code> commands is:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git add first-file.txt <span class="c1"># Adds only changes to first-file to the staging area</span>
+git add first-file.txt second-file.txt <span class="c1"># Adds changes to first-file and second-file to the staging area</span>
+git commit -m <span class="s2">&quot;FIX: Warning dialog was not showing fixed.&quot;</span> <span class="c1"># This commit with the specific message given and without opening the text editor</span>
+</pre></div>
+</div>
+<p>Inspecting your repository you can use:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git log --oneline -n <span class="m">5</span> <span class="c1"># View maximum of 5 last commits in one line description</span>
+git checkout 5a4763d5 <span class="c1"># Move code to previous commit for read-only purpose. Does not affect the code.</span>
+git checkout 5a4763d5 &lt;first-file.txt&gt; <span class="c1"># Checking out to a file directly is considered as a change to the code and will be available to be commited again. This affects the code.</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">5a4763d5</span></code> is the commit specific 8-digit identifier displayed after the log command or in the repository webpage. The <code class="docutils literal notranslate"><span class="pre">checkout</span></code> command allows you to travel along the code history.</p>
+<p>It is possible to revert a specific commit. Git will apply the changes of removing a single past commit and will create a new commit with the new changes. It is a safe operation beacuse does not chenge the project history. While git reset will delete previous commits and go back to the specified commit, so it is a dangerous method beacuse modify project history. Git reset can also be used to clean the staging area from undersider commits.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">revert</span></code> and <code class="docutils literal notranslate"><span class="pre">reset</span></code> commands carefully, because you can create a big mess in the code for you and all other collaborators.</p>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git revert 5a4763d5
+git reset 5a4763d5
+</pre></div>
+</div>
+<p>You may want to upload your created local repository to the remote repository. Use the following command to push and track it:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git push -u origin new_colormap
+</pre></div>
+</div>
+<p>In a daily routine you will want to make changes to your code and have them available in the remote repository. Think that you will be working in the same feature on your laptop and your workstation at the University. To do so, it’s best to keep the remote repository always updated. After you worked on your laptop and commited your changes, you can push them to the remote repository by:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git push origin new_colormap
+</pre></div>
+</div>
+<p>On the other day, you go to the University and will work on the workstation. If your branch is not on your workstation yet, add it by:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git pull <span class="c1"># this will fetch all remote branches</span>
+git checkout new_colormap
+</pre></div>
+</div>
+<p>Or:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git checkout -t origin/new_colormap
+</pre></div>
+</div>
+<p>If the branch is already on your computer, download the changes you made the day before using the <code class="docutils literal notranslate"><span class="pre">pull</span></code> command.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git pull origin new_colormap
+</pre></div>
+</div>
+<p>Now, consider that other collaborators made changes to the main repository that were already incorporated</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git fetch origin <span class="c1"># Download remote commits and branches</span>
+git log --oneline master.. origin/master <span class="c1"># See what commits were added</span>
+git checkout master <span class="c1"># Move to master</span>
+git log origin/master <span class="c1"># See what is on origin/master</span>
+git merge origin/master <span class="c1"># Synchronize origin/master into local master</span>
+</pre></div>
+</div>
+<p>To make things easier the pull command wrapps the fetch and merge into one command.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git pull origin <span class="c1"># It is the same as &quot;git fetch origin&quot; + &quot;git merge origin/master&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Further instructions will soon be added.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="issue-tracking.html" class="btn btn-neutral float-right" title="Issue tracking" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="basic-concepts.html" class="btn btn-neutral float-left" title="Basic concepts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Victor Hugo Souza
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

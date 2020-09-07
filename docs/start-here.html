@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; Git Course v0.1 documentation</title>
+  <title>Introduction to Git &mdash; Git Course v0.1 documentation</title>
   
 
   
@@ -25,7 +25,6 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
-        <script src="_static/searchtools.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -35,7 +34,9 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Basic concepts" href="basic-concepts.html" />
+    <link rel="prev" title="Fast Git Course!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -62,7 +63,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -80,8 +81,12 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="start-here.html">Introduction to Git</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to Git</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#material">Material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-git">What is Git?</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="basic-concepts.html">Basic concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflows.html">Workflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issue-tracking.html">Issue tracking</a></li>
@@ -130,12 +135,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>Introduction to Git</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/start-here.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -147,24 +154,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="introduction-to-git">
+<h1>Introduction to Git<a class="headerlink" href="#introduction-to-git" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://git-scm.com/">Git</a> is a version-control system. There are others, such as: Mercurial, Subversion, etc.
+Git is by far the most used.</p>
+<p>Repositories can be hosted online on web platforms, e.g. GitHub, GitLab, and Bitbucket. They differ on high-level features, for example, issue tracking, contributors management, integrations, basic features but not on the git core functionalities.</p>
+<p><a class="reference external" href="https://version.aalto.fi/">Aalto Version Control System</a> is developed on top of GitLab.</p>
+<div class="section" id="material">
+<h2>Material<a class="headerlink" href="#material" title="Permalink to this headline">¶</a></h2>
+<p>There is plenty of material available on the internet, but is a little bit hard to find straightforward instructions/explanations.
+I collected a few websites that is worth checking:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://coderefinery.github.io/git-intro/">Introduction to Git: Code Refinery 2019 (~285 min)</a></p></li>
+<li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials/setting-up-a-repository">First steps with Git</a></p></li>
+<li><p><a class="reference external" href="http://gitimmersion.com/">Training with Git Immersion</a></p></li>
+<li><p><a class="reference external" href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Configure SSH keys</a></p></li>
+<li><p><a class="reference external" href="https://se.mathworks.com/help/matlab/matlab_prog/set-up-git-source-control.html">MATLAB Git set up</a></p></li>
+<li><p><a class="reference external" href="https://users.aalto.fi/~darstr1/cheatsheets/git-cheatsheet.pdf">Aalto Git cheatsheet</a></p></li>
+</ul>
+</div>
+<div class="section" id="what-is-git">
+<h2>What is Git?<a class="headerlink" href="#what-is-git" title="Permalink to this headline">¶</a></h2>
+<p>Git works by tracking <em>changes in files</em> and not by <em>manipulating files</em>! (What?)</p>
+<p>With version control you can travel back and forth in the history of your code.</p>
+<p>Git allows you to automatically combine and synccode code that is edited simultaniously in multiple places.</p>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="basic-concepts.html" class="btn btn-neutral float-right" title="Basic concepts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Fast Git Course!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -197,14 +227,7 @@
   
   
     
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

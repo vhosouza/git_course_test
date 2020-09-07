@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Git Quick Course'
-copyright = '2020, Victor Souza'
-author = 'Victor Souza'
+project = 'Git Course'
+copyright = '2020, Victor Hugo Souza'
+author = 'Victor Hugo Souza'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.7'
+release = 'v0.1'
 
 # -- General configuration ---------------------------------------------------
 
@@ -45,7 +45,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
