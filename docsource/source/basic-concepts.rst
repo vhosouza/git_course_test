@@ -20,13 +20,13 @@ Common terms
 Forking
 -------
 
-.. image:: images/git-forks.png
+.. image:: ./images/git-forks.png
   :width: 800
   :alt: Forking workflow
 
 Branches
 --------
 
-.. image:: images/git-branches.png
+.. image:: ./images/git-branches.png
   :width: 800
   :alt: Forking workflow

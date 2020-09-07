@@ -3,7 +3,7 @@ Issue tracking
 
 Organize and maintain your code using the issue tracking features.
 
-.. image:: images/issues-sidebar.png
+.. image:: ./images/issues-sidebar.png
   :width: 150
   :alt: Issues sidebar
 
